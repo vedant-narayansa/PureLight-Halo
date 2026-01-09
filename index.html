@@ -222,6 +222,13 @@
             transform: translate(-50%, -50%) scale(1.1);
         }
 
+        .floating-button.housing-unit {
+            top: 27%;
+            left: 55.5%;
+            width: 370px;
+            height: 65px;
+        }
+
         .text-bubble {
             position: absolute;
             background: white;
@@ -268,6 +275,61 @@
             grid-column: 1 / -1;
             max-width: 600px;
             margin: 0 auto;
+        }
+
+        h2 {
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 48px;
+        }
+
+        h3 {
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .floating-button[data-position="photocell"] {
+            top: 7.6%;
+            left: 27%;
+            width: 210px;
+            height: 50px;
+        }
+
+        .floating-button[data-position="housing"] {
+            top: 27%;
+            left: 55.5%;
+            width: 370px;
+            height: 65px;
+        }
+
+        .floating-button[data-position="smart-module"] {
+            top: 44.2%;
+            left: 57.2%;
+            width: 400px;
+            height: 120px;
+        }
+
+        .floating-button[data-position="shield-cone"] {
+            top: 58.3%;
+            left: 52.4%;
+            width: 240px;
+            height: 60px;
+        }
+
+        .floating-button[data-position="blue-light-filter"] {
+            top: 79%;
+            left: 54%;
+            width: 325px;
+            height: 65px;
+        }
+
+        .floating-button[data-position="holographic-diffuser"] {
+            top: 93%;
+            left: 56.8%;
+            width: 410px;
+            height: 70px;
         }
 
         @media (max-width: 768px) {
@@ -457,17 +519,16 @@
       <div class="center">
         <div class="diagram-container">
           <img src="Diagram.png" alt="Lampost Diagram Image" />
-          <button class="floating-button" style="top: 7.6%; left: 27%; width: 210px; height: 50px;" data-text="The photocell is a light-sensitive sensor mounted on top of the housing that detects ambient daylight levels. It automatically turns the streetlight on at dusk and off at dawn, and can also support dimming schedules so the light only runs at full brightness when needed, reducing energy use and unnecessary nighttime illumination. This helps reduce the amount of energy used while it can still optimize use." aria-label="Photocell sensor information">
+          <button class="floating-button" style="top: 7.6%; left: 27%; width: 210px; height: 50px;" data-text="The photocell is a light-sensitive sensor mounted on top of the housing unit that detects ambient daylight levels and is also connected to the NEMA/Zhanga adapter. It automatically turns the streetlight on at dusk and off at dawn as it sends a low voltage signal to the smart module which then sends the signal to the NEMA adapter and then to the luminaire's driver, turning on/off the light."></button>
+          <button class="floating-button" style="top: 27%; left: 55.5%; width: 370px; height: 65px;" data-text="The outer housing unit of PureLight Halo encloses the light source and attaches to existing streetlights using an adjustable mounting ring. Adapter inserts allow the same system to fit a wide range of streetlight sizes and shapes, including older fixtures, without rewiring or permanent modifications. This retrofit design makes large-scale deployment practical and cost-effective.The Outer shell is UV-stabilized, impact-resistant recycled aluminum with a fluoropolymer coating so it survives snow, rain,heat, and vandalism without cracking or corroding.">
           </button>
-          <button class="floating-button" style="top: 27%; left: 55.5%; width: 370px; height: 65px;" data-text="The outer housing unit of PureLight Halo encloses the light source and attaches to existing streetlights using an adjustable mounting ring. Adapter inserts allow the same system to fit a wide range of streetlight sizes and shapes, including older fixtures, without rewiring or permanent modifications. This retrofit design makes large-scale deployment practical and cost-effective. The Outer shell is UV-stabilized, impact-resistant polycarbonate or powder-coated recycled aluminum so it survives sun, rain, heat, and vandalism without cracking or corroding." aria-label="Outer housing unit information">
+          <button class="floating-button" style="top: 44.2%; left: 57.2%; width: 400px; height: 120px;" data-text="PureLight Halo functions primarily as a passive system, but it can optionally connect to existing streetlight control ports using standard NEMA or Zhaga adapters. This allows compatibility with city-installed dimming or sensor systems without adding new power sources or wiring. When available, this enables adaptive lighting that reduces energy use during low-activity periods(This is only possible if the luminaire's driver is dimmable). The plug module uses copper contacts inside a sealed polycarbonate/nylon housing, because that is standard for outdoor electrical connectors. The goal is just plug into something existing instead of us having to make a completely new power so the materials focus on weatherproofing and safe insulation.  Additionally the PIR and Radar sensors attached to the outer housing unit send low voltage signals to the smart module whenever they detect activity which, and then sends the signal to the NEMA adapter, which then sends that signal to the luminaire's driver causing the streetlight to dim or brighten based on activity levels.">
           </button>
-          <button class="floating-button" style="top: 44.2%; left: 57.2%; width: 400px; height: 120px;" data-text="PureLight Halo functions primarily as a passive system, but it can optionally connect to existing streetlight control ports using standard NEMA or Zhaga adapters. This allows compatibility with city-installed dimming or sensor systems without adding new power sources or wiring. When available, this enables adaptive lighting that reduces energy use during low-activity periods. The optional plug module uses copper contacts inside a sealed polycarbonate/nylon housing, because that's standard for outdoor electrical connectors." aria-label="Control system information">
+          <button class="floating-button" style="top: 58.3%; left: 52.4%; width: 240px; height: 60px;" data-text="Inside the system, a downward shield cone physically blocks light from traveling upward or sideways. This prevents unnecessary light from entering the sky or shining directly into people's eyes, which are the primary causes of skyglow and glare. Visibility is improved without over-illumination as our product controls direction rather than brightness. The cone is matte-black anodized aluminum with a matte black interior coating because it is rigid and holds shape while also resisting heat from the lamp. The matte specifically helps absorb stray light instead of reflecting it back out. This process helps reduce the glare and fuzziness emitted by streetlights." aria-label="Shield cone information">
           </button>
-          <button class="floating-button" style="top: 58.3%; left: 52.4%; width: 240px; height: 60px;" data-text="Inside the system, a downward shield cone physically blocks light from traveling upward or sideways. This prevents unnecessary light from entering the sky or shining directly into people's eyes, which are the primary causes of skyglow and glare. Visibility is improved without over-illumination as our product controls direction rather than brightness. The cone is matte-black anodized aluminum with a matte black interior coating because it's rigid and holds shape while also resisting heat from the lamp." aria-label="Shield cone information">
+          <button class="floating-button" style="top: 79%; left: 54%; width: 325px; height: 65px;" data-text="Rather than changing the bulb itself, PureLight Halo reduces blue light through an optical blue light filter in the lens. This approach preserves functional light while limiting wavelengths most responsible for skyglow, glare, and circadian disruption. The result is softer, healthier lighting without sacrificing visibility. Instead of changing bulbs, we use an optical filter that can either be thin-film or amber additive that reduces the 450–500nm range while keeping overall visibility strong. This is realistic because it is basically the same tech as tinted safety eyewear, just engineered for outdoor lighting optics." aria-label="Blue light filter information">
           </button>
-          <button class="floating-button" style="top: 79%; left: 54%; width: 325px; height: 65px;" data-text="Rather than changing the bulb itself, PureLight Halo reduces blue light through optical filtering in the diffuser. This approach preserves functional white light while limiting wavelengths most responsible for skyglow, glare, and circadian disruption. The result is softer, healthier lighting without sacrificing visibility. Instead of changing bulbs, we use an optical filter that reduces the 450–500nm range while keeping overall visibility strong." aria-label="Blue light filter information">
-          </button>
-          <button class="floating-button" style="top: 93%; left: 56.8%; width: 410px; height: 70px;" data-text="The holographic diffuser is a thin optical layer placed below the shield cone that spreads light evenly across the ground without increasing brightness. Unlike a basic diffuser, it reshapes the light pattern to eliminate harsh hotspots and glare while maintaining visibility, allowing the fixture to use lower intensity light with the same functional coverage." aria-label="Holographic diffuser information">
+          <button class="floating-button" style="top: 93%; left: 56.8%; width: 410px; height: 70px;" data-text="The holographic diffuser is a thin optical layer with an etched elliptical/batwing pattern placed below the shield cone that spreads light evenly across the ground without increasing brightness. Unlike a basic diffuser, it reshapes the light pattern to eliminate harsh hotspots and glare while maintaining visibility and increasing contrast, allowing the fixture to use lower intensity light with the same functional coverage." aria-label="Holographic diffuser information">
           </button>
         </div>
       </div>
@@ -582,71 +643,72 @@
     <div id="bubble" class="text-bubble"></div>
     <script>
       function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            const headerHeight = document.querySelector('.header-container').offsetHeight;
-            const sectionPosition = section.offsetTop - headerHeight - 20;
-            window.scrollTo({
-                top: sectionPosition,
-                behavior: 'smooth'
-            });
+        const section = document.getElementById(sectionId);
+        const headerHeight = document.querySelector('.header-container').offsetHeight;
+        const sectionPosition = section.offsetTop - headerHeight - 20;
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: 'smooth'
+        });
+      }
+
+      function updateActiveTab() {
+        const sections = ['product', 'benefits', 'safety', 'diagram', 'team', 'team-whole'];
+        const headerHeight = document.querySelector('.header-container').offsetHeight;
+        const scrollPosition = window.scrollY + headerHeight + 100;
+        let currentSection = 'product';
+
+        for (const sectionId of sections) {
+          const section = document.getElementById(sectionId);
+          if (section && scrollPosition >= section.offsetTop) {
+            currentSection = sectionId;
+          }
         }
 
-        function updateActiveTab() {
-            const sections = ['product', 'benefits', 'safety', 'diagram', 'team', 'team-whole'];
-            const headerHeight = document.querySelector('.header-container').offsetHeight;
-            const scrollPosition = window.scrollY + headerHeight + 100;
-            let currentSection = 'product';
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+          tab.classList.remove('active');
+        });
 
-            for (const sectionId of sections) {
-                const section = document.getElementById(sectionId);
-                if (section && scrollPosition >= section.offsetTop) {
-                    currentSection = sectionId;
-                }
-            }
+        const sectionNameMap = {
+          'product': 'product',
+          'benefits': 'benefits',
+          'safety': 'safety regulations',
+          'diagram': 'diagram',
+          'team': 'team',
+          'team-whole': 'team as a whole'
+        };
 
-            document.querySelectorAll('.nav-tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-
-            const sectionNameMap = {
-                'product': 'product',
-                'benefits': 'benefits',
-                'safety': 'safety regulations',
-                'diagram': 'diagram',
-                'team': 'team',
-                'team-whole': 'team as a whole'
-            };
-
-            const activeButton = Array.from(document.querySelectorAll('.nav-tab'))
-                .find(tab => tab.textContent.toLowerCase() === sectionNameMap[currentSection]);
-            
-            if (activeButton) {
-                activeButton.classList.add('active');
-            }
+        const activeButton = Array.from(document.querySelectorAll('.nav-tab'))
+          .find(tab => tab.textContent.toLowerCase() === sectionNameMap[currentSection]);
+        
+        if (activeButton) {
+          activeButton.classList.add('active');
         }
+      }
 
-        window.addEventListener('scroll', updateActiveTab);
-        updateActiveTab();
+      window.addEventListener('scroll', updateActiveTab);
+      updateActiveTab();
 
-        const bubble = document.getElementById('bubble');
+      const bubble = document.getElementById('bubble');
 
-        document.querySelectorAll('.floating-button').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                bubble.textContent = btn.dataset.text;
-                bubble.style.display = 'block';
-                const rect = btn.getBoundingClientRect();
-                bubble.style.left = (rect.right + 15) + 'px';
-                bubble.style.top = (rect.top + window.scrollY) + 'px';
-            });
+      document.querySelectorAll('.floating-button').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          bubble.textContent = btn.dataset.text;
+          bubble.style.display = 'block';
+          const rect = btn.getBoundingClientRect();
+          bubble.style.left = (rect.right + 15) + 'px';
+          bubble.style.top = (rect.top + window.scrollY) + 'px';
         });
+      });
 
-        document.addEventListener('click', (e) => {
-            if (!e.target.classList.contains('floating-button')) {
-                bubble.style.display = 'none';
-            }
-        });
+      document.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('floating-button')) {
+          bubble.style.display = 'none';
+        }
+      });
     </script>
   </body>
-</html>t
+</html>
+
 
