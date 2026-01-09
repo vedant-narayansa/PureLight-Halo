@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PureLight Halo's Website</title>
     <style>
-        body {
+      body {
             margin: 0;
             min-height: 100vh;
             background: linear-gradient(135deg, #4b4949 0%, #6dc951 100%);
@@ -250,6 +250,26 @@
             border-right: 10px solid white;
         }
 
+        .drawings-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .drawings-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .drawings-grid .full-width {
+            grid-column: 1 / -1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -285,6 +305,14 @@
                 max-width: 280px;
                 font-size: 14px;
             }
+
+            .drawings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .drawings-grid .full-width {
+                max-width: 100%;
+            }
         }
 
         @media (max-width: 968px) {
@@ -298,147 +326,262 @@
             }
         }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header-container">
-        <h1>PureLight Halo</h1>
-        <nav class="nav-tabs">
-            <button class="nav-tab" onclick="scrollToSection('product')">Product</button>
-            <button class="nav-tab" onclick="scrollToSection('benefits')">Benefits</button>
-            <button class="nav-tab" onclick="scrollToSection('diagram')">Diagram</button>
-            <button class="nav-tab" onclick="scrollToSection('team')">Team</button>
-            <button class="nav-tab" onclick="scrollToSection('team-whole')">Team As a Whole</button>
-        </nav>
+      <h1>PureLight Halo</h1>
+      <nav class="nav-tabs">
+        <button class="nav-tab" onclick="scrollToSection('product')">Product</button>
+        <button class="nav-tab" onclick="scrollToSection('benefits')">Benefits</button>
+        <button class="nav-tab" onclick="scrollToSection('safety')">Safety Regulations</button>
+        <button class="nav-tab" onclick="scrollToSection('diagram')">Diagram</button>
+        <button class="nav-tab" onclick="scrollToSection('team')">Team</button>
+        <button class="nav-tab" onclick="scrollToSection('team-whole')">Team As a Whole</button>
+      </nav>
     </div>
-
-    <br><br>
-
+    <br />
+    <br />
     <div id="product">
-        <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">The Product</h2>
-        <div class="bubble-primary">
-            <p>Our product PureLight Halo is an attachment to active streetlights that implementing doesn't require full replacement of streetlights. Being able to be attached seamlessly, It provides seamless integration without overhaul. Our product combines optional adaptive controls (intensity can be adjusted) with passive optical engineering (shield count) to combat the problems of light pollution, glare, and energy waste simultaneously.</p>
-        </div>
+      <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">
+        The Product
+      </h2>
+      <div class="bubble-primary">
+        <p>
+          Our product PureLight Halo is an attachment to active streetlights that implementing doesn't require full replacement of streetlights. Being able to be attached seamlessly, It provides seamless integration without overhaul. Our product combines optional adaptive controls (intensity can be adjusted) with passive optical engineering (shield count) to combat the problems of light pollution, glare, and energy waste simultaneously.
+        </p>
+      </div>
     </div>
-
-    <br><br><br>
-
+    <br />
+    <br />
+    <br />
     <div id="benefits">
-        <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">The Benefits</h2>
-        <div class="bubble-secondary">
-            <div class="purelight-halo">
-                <p>PureLight Halo transfigures urban lighting by reducing environmental harm while enhancing public health, safety, and ecological balance. By rectifying the negative impacts of shoddy lighting, the system delivers clear, measurable improvements that help cities become healthier, safer, and more sustainable places to live.</p>
-                <h2>Public Benefits:</h2>
-                <p><strong>Enhanced Nighttime Safety</strong> – Improved prominence through glare reduction and balanced light distribution constitutes better reaction time and hazard recognition, making roads and sidewalks safer for drivers, cyclists, and pedestrians.</p>
-                <p><strong>Reduced Eye Strain and Visual Discomfort</strong> – Removes harsh brightness and uncontrolled glare that cause squinting, short term vision loss, and headaches during nighttime travel and outdoor activities.</p>
-                <p><strong>Better Sleep and Circadian Health</strong> – Minimizes blue light wavelengths that suppress melatonin production, supporting healthier sleep cycles for residents living near streetlights and illuminated corridors.</p>
-                <p><strong>Restored Night Sky Visibility</strong> – Reduces skyglow by up to 40%, allowing stars and celestial features to become visible again in urban and suburban areas and reconnecting communities with the natural night environment.</p>
-                <p><strong>Lower Energy Costs for Cities</strong> – Adaptive dimming and intelligent controls reduce municipal electricity consumption by up to 80%, freeing public funds for infrastructure, safety, and community services.</p>
-                <p><strong>Protection of Urban Wildlife</strong> – Shields nocturnal animals, insects, and migratory birds from disruptive artificial lighting, helping preserve natural behaviors and local biodiversity.</p>
-                <p><strong>Tourism and Economic Opportunity</strong> – Creates opportunities for astrotourism and special astronomical events by enabling temporary, coordinated city wide dimming for eclipses, meteor showers, and night sky festivals.</p>
-                <p><strong>More Welcoming Public Spaces</strong> – Comfortable, well designed lighting encourages safe evening use of parks, town centers, and pedestrian areas without excessive brightness or over illumination.</p>
-                <p><strong>Long-Term Environmental Sustainability</strong> – Contributes to carbon reduction goals through long term energy savings while addressing light pollution that impacts ecosystems up to 200 miles beyond city limits.</p>
-            </div>
+      <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">
+        The Benefits
+      </h2>
+      <div class="bubble-secondary">
+        <div class="purelight-halo">
+          <p>
+            PureLight Halo transfigures urban lighting by reducing environmental harm while enhancing public health, safety, and ecological balance. By rectifying the negative impacts of shoddy lighting, the system delivers clear, measurable improvements that help cities become healthier, safer, and more sustainable places to live.
+          </p>
+          <h2>Public Benefits:</h2>
+          <p>
+            <strong>Enhanced Nighttime Safety</strong>
+            – Improved prominence through glare reduction and balanced light distribution constitutes better reaction time and hazard recognition, making roads and sidewalks safer for drivers, cyclists, and pedestrians.
+          </p>
+          <p>
+            <strong>Reduced Eye Strain and Visual Discomfort</strong>
+            – Removes harsh brightness and uncontrolled glare that cause squinting, short term vision loss, and headaches during nighttime travel and outdoor activities.
+          </p>
+          <p>
+            <strong>Better Sleep and Circadian Health</strong>
+            – Minimizes blue light wavelengths that suppress melatonin production, supporting healthier sleep cycles for residents living near streetlights and illuminated corridors.
+          </p>
+          <p>
+            <strong>Restored Night Sky Visibility</strong>
+            – Reduces skyglow by up to 40%, allowing stars and celestial features to become visible again in urban and suburban areas and reconnecting communities with the natural night environment.
+          </p>
+          <p>
+            <strong>Lower Energy Costs for Cities</strong>
+            – Adaptive dimming and intelligent controls reduce municipal electricity consumption by up to 80%, freeing public funds for infrastructure, safety, and community services.
+          </p>
+          <p>
+            <strong>Protection of Urban Wildlife</strong>
+            – Shields nocturnal animals, insects, and migratory birds from disruptive artificial lighting, helping preserve natural behaviors and local biodiversity.
+          </p>
+          <p>
+            <strong>Tourism and Economic Opportunity</strong>
+            – Creates opportunities for astrotourism and special astronomical events by enabling temporary, coordinated city wide dimming for eclipses, meteor showers, and night sky festivals.
+          </p>
+          <p>
+            <strong>More Welcoming Public Spaces</strong>
+            – Comfortable, well designed lighting encourages safe evening use of parks, town centers, and pedestrian areas without excessive brightness or over illumination.
+          </p>
+          <p>
+            <strong>Long-Term Environmental Sustainability</strong>
+            – Contributes to carbon reduction goals through long term energy savings while addressing light pollution that impacts ecosystems up to 200 miles beyond city limits.
+          </p>
         </div>
+      </div>
     </div>
-
-    <br><br><br>
-
+    <br />
+    <br />
+    <br />
+    <div id="safety">
+      <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">
+        Safety Regulations
+      </h2>
+      <div class="bubble-secondary">
+        <div class="safety-regulations">
+          <p>
+            PureLight Halo is designed to meet and exceed industry safety standards, ensuring compliance with municipal, federal, and international lighting regulations while prioritizing public safety and accessibility.
+          </p>
+          <h2>Compliance Standards:</h2>
+          <p>
+            <strong>ANSI/IES RP-8-21</strong>
+            – Uses adaptive lighting that maintains mandatory lux levels of 8.0 lux for local streets during the 20% idle state and a minimum of 20 lux in the retrofit's idle state for intersections, highways and major roads.
+          </p>
+          <p>
+            <strong>ANSI C136.41-2025</strong>
+            – Uses a standardized 7-pin NEMA connector for safe 0-10V and DALI dimming control.
+          </p>
+          <p>
+            <strong>FHWA</strong>
+            – Uses a 150-foot sensor range and soft transition of changes in brightness for driver safety and visual adaptation.
+          </p>
+          <p>
+            <strong>FCC</strong>
+            – The radar sensors we use are FCC pre-certified, specifically the InnoSenT IPM-165.
+          </p>
+          <p>
+            <strong>UL 8750</strong>
+            – PureLight Halo preserves existing wiring by interfacing the existing NEMA socket to prevent fire and shock hazards.
+          </p>
+          <p>
+            <strong>ADA / PROWAG</strong>
+            – The photocell module does not protrude into or obstruct the 27–80 inch pedestrian safety zone.
+          </p>
+          <p>
+            <strong>DarkSky International</strong>
+            – The shield cone meets the zero uplight requirement and the blue light filter makes it so that the retrofit stays below the 3000K CCT limit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
     <div id="diagram">
-        <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">Diagram (click on the labels for the descriptions)</h2>
-        <div class="center">
-            <div class="diagram-container">
-                <img src="Diagram.png" alt="Lampost Diagram Image">
-                
-                <button class="floating-button" style="top: 7.6%; left: 27%; width: 210px; height: 50px;" data-text="The photocell is a light-sensitive sensor mounted on top of the housing that detects ambient daylight levels. It automatically turns the streetlight on at dusk and off at dawn, and can also support dimming schedules so the light only runs at full brightness when needed, reducing energy use and unnecessary nighttime illumination. This helps reduce the amount of energy used while it can still optimize use." aria-label="Photocell sensor information"></button>
-                
-                <button class="floating-button" style="top: 27%; left: 55.5%; width: 370px; height: 65px;" data-text="The outer housing unit of PureLight Halo encloses the light source and attaches to existing streetlights using an adjustable mounting ring. Adapter inserts allow the same system to fit a wide range of streetlight sizes and shapes, including older fixtures, without rewiring or permanent modifications. This retrofit design makes large-scale deployment practical and cost-effective. The Outer shell is UV-stabilized, impact-resistant polycarbonate or powder-coated recycled aluminum so it survives sun, rain, heat, and vandalism without cracking or corroding." aria-label="Outer housing unit information"></button>
-                
-                <button class="floating-button" style="top: 44.2%; left: 57.2%; width: 400px; height: 120px;" data-text="PureLight Halo functions primarily as a passive system, but it can optionally connect to existing streetlight control ports using standard NEMA or Zhaga adapters. This allows compatibility with city-installed dimming or sensor systems without adding new power sources or wiring. When available, this enables adaptive lighting that reduces energy use during low-activity periods. The optional plug module uses copper contacts inside a sealed polycarbonate/nylon housing, because that's standard for outdoor electrical connectors." aria-label="Control system information"></button>
-                
-                <button class="floating-button" style="top: 58.3%; left: 52.4%; width: 240px; height: 60px;" data-text="Inside the system, a downward shield cone physically blocks light from traveling upward or sideways. This prevents unnecessary light from entering the sky or shining directly into people's eyes, which are the primary causes of skyglow and glare. Visibility is improved without over-illumination as our product controls direction rather than brightness. The cone is matte-black anodized aluminum with a matte black interior coating because it's rigid and holds shape while also resisting heat from the lamp." aria-label="Shield cone information"></button>
-                
-                <button class="floating-button" style="top: 79%; left: 54%; width: 325px; height: 65px;" data-text="Rather than changing the bulb itself, PureLight Halo reduces blue light through optical filtering in the diffuser. This approach preserves functional white light while limiting wavelengths most responsible for skyglow, glare, and circadian disruption. The result is softer, healthier lighting without sacrificing visibility. Instead of changing bulbs, we use an optical filter that reduces the 450–500nm range while keeping overall visibility strong." aria-label="Blue light filter information"></button>
-                
-                <button class="floating-button" style="top: 93%; left: 56.8%; width: 410px; height: 70px;" data-text="The holographic diffuser is a thin optical layer placed below the shield cone that spreads light evenly across the ground without increasing brightness. Unlike a basic diffuser, it reshapes the light pattern to eliminate harsh hotspots and glare while maintaining visibility, allowing the fixture to use lower intensity light with the same functional coverage." aria-label="Holographic diffuser information"></button>
-            </div>
+      <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">
+        Diagram (click on the labels for the descriptions)
+      </h2>
+      <div class="center">
+        <div class="diagram-container">
+          <img src="Diagram.png" alt="Lampost Diagram Image" />
+          <button class="floating-button" style="top: 7.6%; left: 27%; width: 210px; height: 50px;" data-text="The photocell is a light-sensitive sensor mounted on top of the housing that detects ambient daylight levels. It automatically turns the streetlight on at dusk and off at dawn, and can also support dimming schedules so the light only runs at full brightness when needed, reducing energy use and unnecessary nighttime illumination. This helps reduce the amount of energy used while it can still optimize use." aria-label="Photocell sensor information">
+          </button>
+          <button class="floating-button" style="top: 27%; left: 55.5%; width: 370px; height: 65px;" data-text="The outer housing unit of PureLight Halo encloses the light source and attaches to existing streetlights using an adjustable mounting ring. Adapter inserts allow the same system to fit a wide range of streetlight sizes and shapes, including older fixtures, without rewiring or permanent modifications. This retrofit design makes large-scale deployment practical and cost-effective. The Outer shell is UV-stabilized, impact-resistant polycarbonate or powder-coated recycled aluminum so it survives sun, rain, heat, and vandalism without cracking or corroding." aria-label="Outer housing unit information">
+          </button>
+          <button class="floating-button" style="top: 44.2%; left: 57.2%; width: 400px; height: 120px;" data-text="PureLight Halo functions primarily as a passive system, but it can optionally connect to existing streetlight control ports using standard NEMA or Zhaga adapters. This allows compatibility with city-installed dimming or sensor systems without adding new power sources or wiring. When available, this enables adaptive lighting that reduces energy use during low-activity periods. The optional plug module uses copper contacts inside a sealed polycarbonate/nylon housing, because that's standard for outdoor electrical connectors." aria-label="Control system information">
+          </button>
+          <button class="floating-button" style="top: 58.3%; left: 52.4%; width: 240px; height: 60px;" data-text="Inside the system, a downward shield cone physically blocks light from traveling upward or sideways. This prevents unnecessary light from entering the sky or shining directly into people's eyes, which are the primary causes of skyglow and glare. Visibility is improved without over-illumination as our product controls direction rather than brightness. The cone is matte-black anodized aluminum with a matte black interior coating because it's rigid and holds shape while also resisting heat from the lamp." aria-label="Shield cone information">
+          </button>
+          <button class="floating-button" style="top: 79%; left: 54%; width: 325px; height: 65px;" data-text="Rather than changing the bulb itself, PureLight Halo reduces blue light through optical filtering in the diffuser. This approach preserves functional white light while limiting wavelengths most responsible for skyglow, glare, and circadian disruption. The result is softer, healthier lighting without sacrificing visibility. Instead of changing bulbs, we use an optical filter that reduces the 450–500nm range while keeping overall visibility strong." aria-label="Blue light filter information">
+          </button>
+          <button class="floating-button" style="top: 93%; left: 56.8%; width: 410px; height: 70px;" data-text="The holographic diffuser is a thin optical layer placed below the shield cone that spreads light evenly across the ground without increasing brightness. Unlike a basic diffuser, it reshapes the light pattern to eliminate harsh hotspots and glare while maintaining visibility, allowing the fixture to use lower intensity light with the same functional coverage." aria-label="Holographic diffuser information">
+          </button>
         </div>
+      </div>
     </div>
-
-    <br><br><br>
-
+    <br />
+    <br />
+    <br />
+    <div class="bubble-secondary">
+      <h3 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 36px; margin-bottom: 20px;">
+        Actual Innovation Drawings
+      </h3>
+      <div class="drawings-grid">
+        <img src="drawing1.jpeg" alt="Innovation Drawing 1" />
+        <img src="drawing2.jpeg" alt="Innovation Drawing 2" />
+        <img src="drawing3.jpeg" alt="Innovation Drawing 3" class="full-width" />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
     <div id="team">
-        <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">Meet the Team</h2>
-        <div class="text-image-section">
-            <div class="text-image-block">
-                <div class="text-content">
-                    <h3>Vaibav Gaddam</h3>
-                    <p>Vaibhav is the product lead, he helped us understand how each part of the project works. His interest in stem propelled our project through the technical aspect of it.</p>
-                </div>
-                <div class="image-content">
-                    <img src="Vaibav.jpeg" alt="Vaibav Gaddam">
-                </div>
-            </div>
-
-            <div class="text-image-block">
-                <div class="text-content">
-                    <h3>Taewoo Jeong</h3>
-                    <p>Taewoo is our other project lead. His interest in STEM accelerated our progress through his understanding of the problem. He was very adept in understanding the impact of our product</p>
-                </div>
-                <div class="image-content">
-                    <img src="Taewoo.jpeg" alt="Taewoo Jeong">
-                </div>
-            </div>
-
-            <div class="text-image-block">
-                <div class="text-content">
-                    <h3>Amogh Kakuturu</h3>
-                    <p>Amogh contributed to the environmental aspect of the project. His interest in protecting different habitats was highlighted in our projects protectiveness of different ecosystems.</p>
-                </div>
-                <div class="image-content">
-                    <img src="Amogh.jpeg" alt="Amogh Kakuturu">
-                </div>
-            </div>
-
-            <div class="text-image-block">
-                <div class="text-content">
-                    <h3>Simon Baller</h3>
-                    <p>Simon contributed to the marketing aspect of our product. His understanding of the benefits of our product helped us choose which markets to appeal to and how to create profits off our project</p>
-                </div>
-                <div class="image-content">
-                    <img src="Simon.jpeg" alt="Simon Baller">
-                </div>
-            </div>
-
-            <div class="text-image-block">
-                <div class="text-content">
-                    <h3>Vedant Narayansa</h3>
-                    <p>Vedant is contributed to the technical aspect of our project. His interest in coding and design help him create our website to help people be able to reach us and our project in a sustainable way</p>
-                </div>
-                <div class="image-content">
-                    <img src="vedant.jpeg" alt="Vedant Narayansa">
-                </div>
-            </div>
+      <h2 class="center" style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px;">
+        Meet the Team
+      </h2>
+      <div class="text-image-section">
+        <div class="text-image-block">
+          <div class="text-content">
+            <h3>Vaibav Gaddam</h3>
+            <p>
+              Vaibhav is the product lead, he helped us understand how each part of the project works. His interest in stem propelled our project through the technical aspect of it.
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="Vaibav.jpeg" alt="Vaibav Gaddam" />
+          </div>
         </div>
+        <div class="text-image-block">
+          <div class="text-content">
+            <h3>Taewoo Jeong</h3>
+            <p>
+              Taewoo is our other project lead. His interest in STEM accelerated our progress through his understanding of the problem. He was very adept in understanding the impact of our product
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="Taewoo.jpeg" alt="Taewoo Jeong" />
+          </div>
+        </div>
+        <div class="text-image-block">
+          <div class="text-content">
+            <h3>Amogh Kakuturu</h3>
+            <p>
+              Amogh contributed to the environmental aspect of the project. His interest in protecting different habitats was highlighted in our projects protectiveness of different ecosystems.
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="Amogh.jpeg" alt="Amogh Kakuturu" />
+          </div>
+        </div>
+        <div class="text-image-block">
+          <div class="text-content">
+            <h3>Simon Choi</h3>
+            <p>
+              Simon contributed to the marketing aspect of our product. His understanding of the benefits of our product helped us choose which markets to appeal to and how to create profits off our project
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="Simon.jpeg" alt="Simon Choi" />
+          </div>
+        </div>
+        <div class="text-image-block">
+          <div class="text-content">
+            <h3>Vedant Narayansa</h3>
+            <p>
+              Vedant is contributed to the technical aspect of our project. His interest in coding and design help him create our website to help people be able to reach us and our project in a sustainable way
+            </p>
+          </div>
+          <div class="image-content">
+            <img src="vedant.jpeg" alt="Vedant Narayansa" />
+          </div>
+        </div>
+      </div>
     </div>
-
-    <br><br><br>
-
+    <br />
+    <br />
+    <br />
     <div id="team-whole" class="team-section">
-        <div class="team-content">
-            <h2>The Team As a Whole</h2>
-            <p>Our team has a diverse range of experiences and perspectives. We have all worked closely together in this process to develop the best product possible. Throughout our time making our product, we were dedicated to making the best and highest quality product.</p>
-        </div>
-        <div class="team-image">
-            <img src="Team Pic.jpg" alt="Our Team">
-        </div>
+      <div class="team-content">
+        <h2>The Team As a Whole</h2>
+        <p>
+          Our team has a diverse range of experiences and perspectives. We have all worked closely together in this process to develop the best product possible. Throughout our time making our product, we were dedicated to making the best and highest quality product.
+        </p>
+      </div>
+      <div class="team-image">
+        <img src="Team Pic.jpg" alt="Our Team" />
+      </div>
     </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div id="bubble" class="text-bubble"></div>
-
     <script>
-        function scrollToSection(sectionId) {
+      function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
             const headerHeight = document.querySelector('.header-container').offsetHeight;
             const sectionPosition = section.offsetTop - headerHeight - 20;
@@ -449,7 +592,7 @@
         }
 
         function updateActiveTab() {
-            const sections = ['product', 'benefits', 'diagram', 'team', 'team-whole'];
+            const sections = ['product', 'benefits', 'safety', 'diagram', 'team', 'team-whole'];
             const headerHeight = document.querySelector('.header-container').offsetHeight;
             const scrollPosition = window.scrollY + headerHeight + 100;
             let currentSection = 'product';
@@ -468,6 +611,7 @@
             const sectionNameMap = {
                 'product': 'product',
                 'benefits': 'benefits',
+                'safety': 'safety regulations',
                 'diagram': 'diagram',
                 'team': 'team',
                 'team-whole': 'team as a whole'
@@ -503,5 +647,5 @@
             }
         });
     </script>
-</body>
-</html>
+  </body>
+</html>t
